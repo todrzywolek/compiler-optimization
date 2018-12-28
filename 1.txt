@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <time.h>
+
+int main()
+{
+	clock_t start,stop;
+    start = clock();
+    float time;
+    
+    for(int i = 1; i <60000 ; i++)
+    {
+        printf("\nHello There");
+    }
+    stop = clock();
+    time = (stop-start)/CLOCKS_PER_SEC;
+    printf("\nCzas wykonania algorytmu 50000 razy:%0.50f\n",time);
+    
+    
+    
+    
+    
+	return 0;
+}
